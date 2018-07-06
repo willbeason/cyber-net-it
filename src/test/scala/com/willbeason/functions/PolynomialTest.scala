@@ -1,12 +1,11 @@
 package com.willbeason.functions
 
 import org.scalatest.{FeatureSpec, GivenWhenThen, Matchers}
+import com.willbeason.random.randomDoubles
 
 import scala.util.Random
 
 class PolynomialTest extends FeatureSpec with GivenWhenThen with Matchers {
-
-  def randomDoubles(): Stream[Double] = Stream.continually(Random.nextDouble)
 
   feature("Apply") {
     scenario("Evaluating an empty polynomial") {
